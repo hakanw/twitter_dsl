@@ -1,6 +1,6 @@
 IDEA
 
-Here is a proof of concept for a python-based twitter DSL that is adapted for running code via tweets (so the code needs to be short and concise) and have "first-class" access to live twitter data directly in the language. 
+Here is a proof of concept for a python-based twitter DSL that is adapted for running code via tweets (so the code needs to be short and concise) and have "first-class" access to live twitter data directly in the language via @user and #tag constructs. 
 
 You can give the twitter_dsl.py any code via stdin.
 
@@ -12,7 +12,7 @@ Would simply print out the latest tweet from @shitmydadsays.
 
 	print next((t for t in #fail if "cat" in t))
 	
-Would print out the first #fail tweet mentioning a cat.
+Would print out the first #fail tweet also mentioning a cat.
 
 A little more contrived example (I call it The Irony Machine)
 

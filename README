@@ -25,3 +25,11 @@ A TWITTER EXECUTION BOT
 One could expand on this idea, making a bot that accepts code and tweets the output. You could even implement a "goto" or "exec" builtin in the language, allowing to execute code in other tweets by id. 
 
 If the bot allowed to rememeber a code tweet by a name and allow for input arguments you could then reuse previous code in your new code, allowing code tweets to be used as functions, and eventually evolving into a sort of big repository of code to build upon.
+
+TODO
+
+* #topic needs to be implemented. Need to switch to another twitter API lib with search capabilities (python-twitter doesn't have it).
+
+* If you're gonna do this online safely, you need a sandboxed environment. For example pypy's: http://codespeak.net/pypy/dist/pypy/doc/sandbox.html
+
+* Build the bot!

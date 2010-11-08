@@ -10,7 +10,7 @@ EXAMPLES
 
 Would simply print out the latest tweet from @shitmydadsays.
 
-	print next((c for c in @hwaara if "cat" in c))
+	print next((t for t in #fail if "cat" in t))
 	
 Would print out the first #fail tweet mentioning a cat.
 

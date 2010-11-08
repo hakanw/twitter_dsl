@@ -1,0 +1,27 @@
+IDEA
+
+Here is a proof of concept for a python-based twitter DSL that is adapted for running code via tweets (so the code needs to be short and concise) and have "first-class" access to live twitter data directly in the language. 
+
+You can give the twitter_dsl.py any code via stdin.
+
+EXAMPLES 
+	
+	print @shitmydadsays[0]
+
+Would simply print out the latest tweet from @shitmydadsays.
+
+	print next((c for c in _usr("hwaara") if c.find("cat") != -1))
+	
+Would print out the first #fail tweet mentioning a cat.
+
+A little more contrived example (I call it The Irony Machine)
+
+	t=@hwaara[0]; w=t.split(" "); r=randint(0, len(w)-1); print " ".join(w[:r]+["\"%s\"" % w[r]]+w[min(r+1,len(@hwaara)):])
+	
+This gets my latest tweet, finds a random word and puts quotes around it, making it "ironic" in some random sense.
+
+A TWITTER EXECUTION BOT
+
+One could expand on this idea, making a bot that accepts code and tweets the output. You could even implement a "goto" or "exec" builtin in the language, allowing to execute code in other tweets by id. 
+
+If the bot allowed to rememeber a code tweet by a name and allow for input arguments you could then reuse previous code in your new code, allowing code tweets to be used as functions, and eventually evolving into a sort of big repository of code to build upon.

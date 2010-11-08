@@ -44,8 +44,7 @@ def _usr(username):
 def _tag(name):
 	# TODO using a twitter library that supports the search API
 	pass
-
-print code	
+	
 result = compile(code, '', 'exec')
 
 # TODO: pass safe environment instead of passing along everything
